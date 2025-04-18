@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100;
+    font-family: theme('fontFamily.sans');
+  }
+}
+
+@layer components {
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-control {
+    @apply block w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+  }
+  
+  .btn-success {
+    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  .container {
+    @apply max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md my-8;
+  }
+
+  .survey-step {
+    @apply mb-5;
+  }
+
+  .product-item {
+    @apply relative border border-gray-300 rounded-lg p-4 mb-4;
+  }
+
+  .autocomplete-container {
+    @apply relative;
+  }
+
+  .autocomplete-items {
+    @apply absolute border border-gray-300 border-t-0 z-10 w-full max-h-48 overflow-y-auto bg-white;
+  }
+
+  .autocomplete-items div {
+    @apply p-3 cursor-pointer;
+  }
+
+  .autocomplete-items div:hover {
+    @apply bg-gray-100;
+  }
+
+  .camera-container {
+    @apply mt-4;
+  }
+
+  .camera-preview, .photo-canvas {
+    @apply w-full max-w-md border border-gray-300 rounded-md;
+  }
+
+  .preview-image {
+    @apply max-w-md border border-gray-300 rounded-md;
+  }
+
+  .camera-buttons {
+    @apply mt-3;
+  }
+
+  .camera-icon-container {
+    @apply flex justify-center my-5;
+  }
+
+  .camera-icon-btn {
+    @apply flex items-center px-5 py-3 text-lg rounded-lg transition-all duration-300 border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  }
+
+  .camera-icon-btn i {
+    @apply mr-2 text-xl;
+  }
+  
+  /* Form controls */
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-control {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  /* Buttons */
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+  }
+  
+  .btn-success {
+    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  
+  .btn-outline-primary {
+    @apply border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white focus:ring-blue-500;
+  }
+  
+  /* Spacing utilities - using native Tailwind classes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4 py-4 mx-2 my-4;
+  }
+  
+  .product-item {
+    @apply p-3;
+  }
+  
+  .camera-icon-btn {
+    @apply w-full justify-center;
+  }
+  
+  .btn {
+    @apply text-sm py-1.5;
+  }
+}
+
+/* Thêm CSS mới */
+.progress-info {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.photo-preview {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.photo-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
